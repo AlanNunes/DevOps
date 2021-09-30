@@ -7,6 +7,11 @@ Tudo que deve ser persistido deve ficar no volume, que fica localizado no Docker
 ``docker inspect [id_container]``: mostra detalhes do container.
 ``docker build -f CAMINHO_DOCKERFILE/Dockerfile -t NOME_USUARIO/NOME_IMAGEM``: cria uma imagem
 
+``docker network create --driver bridge minha-rede``: cria uma rede
+``docker run -it --name meu-container-de-ubuntu --network minha-rede ubuntu``: cria um container usando minha-rede
+``docker network ls``: lista todas as redes disponíveis
+``docker pull ubuntu``: baixa a imagem do ubuntu
+
 
 # Parâmetros
 * -w: especifica o working directory
