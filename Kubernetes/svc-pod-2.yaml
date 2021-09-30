@@ -9,3 +9,5 @@ spec:
   ports:
     - port: 9000
       targetPort: 80
+  selector:
+    app: primeiro-pod
